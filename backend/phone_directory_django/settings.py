@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from ../config.py import THE_SECRET_KEY
+from config import THE_SECRET_KEY, DB_PASSWORD
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,6 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+#SECRET_KEY = '38e)^(n5!p^kn((1(+)4x1gz0&p1j-7ue0s)u$z52n2*i&n5_4'
 SECRET_KEY = THE_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -81,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'phone_directory',
         'USER': 'operator',
-        'PASSWORD': 'speed-dial',
+        'PASSWORD': DB_PASSWORD,
         'HOST': 'localhost'
     }
 }
