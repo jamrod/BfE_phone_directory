@@ -8,8 +8,8 @@ function Controls(props) {
     return(
         <div>
             <button onClick={() => props.getAll()}>Show Contacts</button>
-            <button onClick={() => console.log("go to add now")}>Add Contacts</button>
-            <Search></Search>
+            <button onClick={() => props.changeView("add")}>Add Contacts</button>
+            <Search searchContacts={props.searchContacts}></Search>
         </div>
     )
 }

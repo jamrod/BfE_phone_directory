@@ -2,10 +2,11 @@ import React from 'react'
 
 import '../App.css'
 
-function Search() {
+function Search(props) {
+   
     return(
         <div className="search">
-            <p>Search bar here</p>
+            <input type="text" id="search-bar" placeholder="Search here..." onChange={(e) => props.searchContacts(e.target.value)} ></input>
         </div>
     )
 }

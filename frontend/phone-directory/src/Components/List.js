@@ -5,7 +5,7 @@ import '../App.css'
 function List(props){
 
     function showContacts(p){
-        if (p.contacts){
+        if (p.contacts.length > 0){
             return (p.contacts.map(contact => (
                 <div className="contact-card" key={`${contact.first_name}-${contact.last_name}`}>
                     <p>
@@ -15,7 +15,7 @@ function List(props){
                     <br></br>
                     <span>Notes:</span>
                     <br></br>
-                    <p>{contact.notes}</p>{contact.id}
+                    <p>{contact.notes}</p>
                 </div>
             ))
             )
