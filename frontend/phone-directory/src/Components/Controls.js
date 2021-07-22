@@ -6,7 +6,7 @@ import '../App.css'
 function Controls(props) {
 
     return(
-        <div>
+        <div className="controls">
             <button onClick={() => props.getAll()}>Show Contacts</button>
             <button onClick={() => props.changeView("add")}>Add Contacts</button>
             <Search searchContacts={props.searchContacts}></Search>

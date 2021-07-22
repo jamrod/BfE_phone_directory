@@ -13,6 +13,8 @@ function List(props){
                     </p>
                     <span>Phone Number: {contact.phone_number}</span>
                     <br></br>
+                    <span>Email: {contact.email}</span>
+                    <br></br>
                     <span>Notes:</span>
                     <br></br>
                     <p>{contact.notes}</p>
