@@ -13,3 +13,23 @@ You need to create a single page application which allows users to
 perform the corresponding actions.
 * The flow, UI, UX and styling of the application is left up to you. Although there are no
 marks for these, an easy to use application is always preferred.
+
+
+### Planning
+#### Backend
+* Use Django REST Framework for backend
+* POSTGRES Database
+    * phone_directory
+* Use generic views
+* Models
+    * Contact
+
+#### Frontend
+* create-react-app
+* Components
+    * Header
+    * Footer
+    * Controls
+    * List
+    * Search
+    * Add

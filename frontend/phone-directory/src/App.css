@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+.App {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  'header'
+  'main'
+  'footer';
+}
+
+.app > header {
+  grid-area: header;
+}
+
+.app > main {
+  grid-area: main;
+  overflow: auto;
+}
+
+.app > footer {
+  grid-area: footer;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.contact-card {
+  text-align: left;
+  max-width: 300px;
+  border: 1px black solid;
+  border-radius: 5%;
+  padding: 1%;
+  margin: 2px;
+  background-color: aliceblue;
+}
+
+
