@@ -4,12 +4,13 @@ import Search from './Search'
 import '../App.css'
 
 function Controls(props) {
-
+    // container for navigation and searchbar
+    
     return(
         <div className="controls">
-            <button onClick={() => props.getAll()}>Show Contacts</button>
-            <button onClick={() => props.changeView("add")}>Add Contacts</button>
-            <Search searchContacts={props.searchContacts}></Search>
+            <button onClick={() => props.getAll()} id="show-button">Show Contacts</button>
+            <button onClick={() => props.changeView("add")} id="add-button">Add Contacts</button>
+            <Search searchContacts={props.searchContacts} view={props.view}></Search>
         </div>
     )
 }

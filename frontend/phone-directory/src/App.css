@@ -1,8 +1,11 @@
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 .App {
   height: 100vh;
+  max-width: 100%;
   text-align: center;
   justify-items: center;
   display: grid;
@@ -12,7 +15,8 @@ body {
   'header'
   'main'
   'footer';
-  padding: 1%;
+  margin: 0;
+  padding: 0;
 }
 
 .app > header {
@@ -30,11 +34,11 @@ body {
 
 main {
   margin: 0;
-  padding: 1%;
+  min-width: 100%;
 }
 
 .controls {
-  padding: 1%;
+  min-width: 100%;
 }
 
 .controls >* {
@@ -46,12 +50,14 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 10px;
 }
 
 .contact-card {
   text-align: left;
   max-width: 300px;
-  border: 1px black solid;
+  border: 2px black solid;
   border-radius: 5%;
   padding: 1%;
   margin: 2px;
@@ -74,4 +80,6 @@ form {
   justify-content: left;
 }
 
-
+.active {
+  background-color: white;
+}

@@ -6,11 +6,7 @@ import Main from './Components/Main';
 
 
 function App() {
-
-
-
-
-
+  //container for basic components, the logic is in the Main component
 
   return (
     <div className="App">

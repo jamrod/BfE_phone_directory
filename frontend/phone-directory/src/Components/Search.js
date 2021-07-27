@@ -3,10 +3,11 @@ import React from 'react'
 import '../App.css'
 
 function Search(props) {
+   //searchbar to filter contacts
    
     return(
         <div className="search">
-            <input type="text" id="search-bar" placeholder="Search here..." onChange={(e) => props.searchContacts(e.target.value)} ></input>
+            { props.view === 'contacts' ? <input type="text" id="search-bar" placeholder="Search here..." onChange={(e) => props.searchContacts(e.target.value)} ></input> : null}
         </div>
     )
 }
