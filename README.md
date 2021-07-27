@@ -24,23 +24,23 @@ github repo - https://github.com/jamrod/BfE_phone_directory
 Unzip archive to desired local directory<br>
 Open a terminal window and navigate to the directory the archive was extracted to<br>
 Initiate Postgres Database<br>
-* login to the psql database server, if configure ‘psql’ will get there or ‘sudo -u postgres psql’ works on my Ubuntu build, alternately ‘psql -U postgres’ could also work
-* create the database by typing “CREATE DATABASE phone_directory;”
-* create user by typing “CREATE USER operator WITH PASSWORD ‘speed-dial;”
-* link the database to the user by typing “GRANT ALL PRIVILEGES ON DATABASE phone_directory TO operator;”
-* exit by typing “/q”
+- login to the psql database server, if configure ‘psql’ will get there or ‘sudo -u postgres psql’ works on my Ubuntu build, alternately ‘psql -U postgres’ could also work
+- create the database by typing “CREATE DATABASE phone_directory;”
+- create user by typing “CREATE USER operator WITH PASSWORD ‘speed-dial;”
+- link the database to the user by typing “GRANT ALL PRIVILEGES ON DATABASE phone_directory TO operator;”
+- exit by typing “/q”<br>
 cd into ‘backend’ directory<br>
 Activate a virtual environment, I use venv, run the following commands to replicate
-* python -m venv .env
-* source .env/bin/activate
+- python -m venv .env
+- source .env/bin/activate<br>
 Install requirements by running “python -m pip install -r requirements.txt”<br>
 Run migrations with command, “python manage.py migrate”<br>
 Start backend server by running “python manage.py renserver”<br>
 Open a second terminal window or tab<br>
 cd into the ‘frontend/phone-directory’ directory<br>
 Set Node version with the following two commands
-* nvm install 12.19.1
-* nvm use 12.19.1
+- nvm install 12.19.1
+- nvm use 12.19.1<br>
 Install dependencies by running ‘npm install’<br>
 Start frontend by running ‘npm run start’<br>
 To avoid Cors issues I used the Chrome Browser with the extension ‘Moesif Origin & CORS Changer’ installed and activated to test the application<br>
