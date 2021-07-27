@@ -33,7 +33,7 @@ Initiate Postgres Database<br>
 cd into ‘backend’ directory<br>
 Activate a virtual environment, I use venv, run the following commands to replicate
 - python -m venv .env
-- source .env/bin/activate<br>
+- source .env/bin/activate
 
 Install requirements by running “python -m pip install -r requirements.txt”<br>
 Run migrations with command, “python manage.py migrate”<br>
@@ -43,7 +43,6 @@ cd into the ‘frontend/phone-directory’ directory<br>
 Set Node version with the following two commands
 - nvm install 12.19.1
 - nvm use 12.19.1
-
 
 Install dependencies by running ‘npm install’<br>
 Start frontend by running ‘npm run start’<br>
