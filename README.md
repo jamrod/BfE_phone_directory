@@ -21,32 +21,32 @@ github repo - https://github.com/jamrod/BfE_phone_directory
 
 ## Deployment Instructions
 
-Unzip archive to desired local directory
-Open a terminal window and navigate to the directory the archive was extracted to
-Initiate Postgres Database
-login to the psql database server, if configure ‘psql’ will get there or ‘sudo -u postgres psql’ works on my Ubuntu build, alternately ‘psql -U postgres’ could also work
-create the database by typing “CREATE DATABASE phone_directory;”
-create user by typing “CREATE USER operator WITH PASSWORD ‘speed-dial;”
-link the database to the user by typing “GRANT ALL PRIVILEGES ON DATABASE phone_directory TO operator;”
-exit by typing “/q”
-cd into ‘backend’ directory
+Unzip archive to desired local directory<br>
+Open a terminal window and navigate to the directory the archive was extracted to<br>
+Initiate Postgres Database<br>
+* login to the psql database server, if configure ‘psql’ will get there or ‘sudo -u postgres psql’ works on my Ubuntu build, alternately ‘psql -U postgres’ could also work
+* create the database by typing “CREATE DATABASE phone_directory;”
+* create user by typing “CREATE USER operator WITH PASSWORD ‘speed-dial;”
+* link the database to the user by typing “GRANT ALL PRIVILEGES ON DATABASE phone_directory TO operator;”
+* exit by typing “/q”
+cd into ‘backend’ directory<br>
 Activate a virtual environment, I use venv, run the following commands to replicate
-python -m venv .env
-source .env/bin/activate
-Install requirements by running “python -m pip install -r requirements.txt”
-Run migrations with command, “python manage.py migrate”
-Start backend server by running “python manage.py renserver”
-Open a second terminal window or tab
-cd into the ‘frontend/phone-directory’ directory
+* python -m venv .env
+* source .env/bin/activate
+Install requirements by running “python -m pip install -r requirements.txt”<br>
+Run migrations with command, “python manage.py migrate”<br>
+Start backend server by running “python manage.py renserver”<br>
+Open a second terminal window or tab<br>
+cd into the ‘frontend/phone-directory’ directory<br>
 Set Node version with the following two commands
-‘nvm install 12.19.1’
-‘nvm use 12.19.1’
-Install dependencies by running ‘npm install’
-Start frontend by running ‘npm run start’
-To avoid Cors issues I used the Chrome Browser with the extension ‘Moesif Origin & CORS Changer’ installed and activated to test the application
-In Chrome, navigate to localhost:3000 to view the application
-Click on the ‘Add Contacts’ button to access the form to add contacts
-Upload a few contacts and then view the results by clicking the ‘Show Contacts’ button
+* nvm install 12.19.1
+* nvm use 12.19.1
+Install dependencies by running ‘npm install’<br>
+Start frontend by running ‘npm run start’<br>
+To avoid Cors issues I used the Chrome Browser with the extension ‘Moesif Origin & CORS Changer’ installed and activated to test the application<br>
+In Chrome, navigate to localhost:3000 to view the application<br>
+Click on the ‘Add Contacts’ button to access the form to add contacts<br>
+Upload a few contacts and then view the results by clicking the ‘Show Contacts’ button<br>
 
 
 
