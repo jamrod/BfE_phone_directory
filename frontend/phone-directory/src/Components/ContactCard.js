@@ -6,8 +6,8 @@ function ContactCard(props) {
     //container to display individual contact info
     const contact = props.contact
 
-    return(
-        <div className="contact-card" key={contact.id}>
+    return (
+        <div className="contact-card" >
             <p>
                 {contact.first_name} {contact.last_name}
             </p>

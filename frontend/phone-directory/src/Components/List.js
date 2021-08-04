@@ -3,12 +3,12 @@ import ContactCard from './ContactCard'
 
 import '../App.css'
 
-function List(props){
+function List(props) {
 
-    function showContacts(contacts){
-        if (contacts.length > 0){
+    function showContacts(contacts) {
+        if (contacts.length > 0) {
             return (contacts.map(contact => (
-                <ContactCard contact={contact}></ContactCard>
+                <ContactCard contact={contact} key={contact.id}></ContactCard>
             ))
             )
         } else {
@@ -16,7 +16,7 @@ function List(props){
         }
     }
 
-    return(
+    return (
         <div className="contact-list">
             {showContacts(props.contacts)}
         </div>
